@@ -6,4 +6,4 @@ jobs:
     name: haha
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{!startsWith('haha', 'hah')}} && echo ${{1 + 1 == '2'}}
+      - run: echo ${{!startsWith('haha', 'hah')}} && echo ${{2 == '2'}}
