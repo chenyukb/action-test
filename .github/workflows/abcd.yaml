@@ -1,4 +1,4 @@
-name: hahah,这个111
+name: hahah,这个abc
 on:
   workflow_dispatch: 
   push:
@@ -11,3 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo abcd && echo ${{!startsWith('haha', 'hah')}} && echo ${{2 == '2'}}
+  demo1:
+    name: haha1112
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ${{!startsWith('haha', 'hah')}} && echo ${{2 == '2'}}
