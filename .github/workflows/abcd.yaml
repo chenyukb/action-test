@@ -7,10 +7,10 @@ on:
     branches: ['main', 'abc', 'def']
 jobs:
   demo:
-    name: haha111
+    name: haha111def
     runs-on: ubuntu-latest
     steps:
-      - run: echo abcd && echo ${{!startsWith('haha', 'hah')}} && echo ${{2 == '2'}}
+      - run: echo def && echo ${{!startsWith('haha', 'hah')}} && echo ${{2 == '2'}}
   demo1:
     name: haha1112
     runs-on: ubuntu-latest
