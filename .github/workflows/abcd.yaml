@@ -15,4 +15,4 @@ jobs:
     name: haha1112abc
     runs-on: ubuntu-latest
     steps:
-      - run: echo abc && ${{!startsWith('haha', 'hah')}} && echo ${{2 == '2'}}
+      - run: echo abc && echo ${{!startsWith('haha', 'hah')}} && echo ${{2 == '2'}}
