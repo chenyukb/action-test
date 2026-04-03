@@ -12,7 +12,7 @@ jobs:
     steps:
       - run: echo ${{!startsWith('haha', 'hah')}} && echo ${{2 == '2'}}
   demo1:
-    name: haha1112
+    name: haha1112abc
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{!startsWith('haha', 'hah')}} && echo ${{2 == '2'}}
+      - run: echo abc && ${{!startsWith('haha', 'hah')}} && echo ${{2 == '2'}}
