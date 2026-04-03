@@ -1,5 +1,6 @@
 name: hahah,这个要随时修改的吗
 on:
+  workflow_dispatch: 
   push:
     branches: ['main']
 jobs:
