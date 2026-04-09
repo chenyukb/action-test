@@ -1,6 +1,5 @@
 name: hahah,这个abc
 on:
-  workflow_dispatch: 
   push:
     branches: ['main']
   pull_request:
