@@ -1,0 +1,13 @@
+name: hahah,这个1111
+on:
+  workflow_dispatch: 
+  push:
+    branches: ['main']
+  pull_request:
+    branches: ['main', 'dev']
+jobs:
+  demo:
+    name: haha111
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ${{!startsWith('haha', 'hah')}} && echo ${{2 == '2'}}
