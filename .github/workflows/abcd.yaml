@@ -3,13 +3,13 @@ on:
   push:
     branches: ['main']
   pull_request:
-    branches: ['main', 'dev']
+    branches: ['main', 'abc', 'def']
 jobs:
   demo:
-    name: haha111
+    name: haha111def1
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{!startsWith('haha', 'hah')}} && echo ${{2 == '2'}}
+      - run: echo def111 && echo ${{!startsWith('haha', 'hah')}} && echo ${{2 == '2'}}
   demo1:
     name: haha1112abc
     runs-on: ubuntu-latest
